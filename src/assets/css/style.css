@@ -1,0 +1,1702 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700,800,900&display=swap');
+/*font-family: 'Work Sans', sans-serif;*/
+*{
+    box-sizing: border-box;
+}
+body{margin: 0px; font-family: 'Work Sans', sans-serif;}
+button:focus{outline: none;}
+input:focus{outline: none;}
+a{
+    color: #1b70bb;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+ul{
+	list-style: none;
+	padding-left: 0;
+}
+
+/*######### comon class css start #########*/
+.btn-outline-light{
+    border-color: #fff;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 30px;
+    font-family: 'CircularStdBold';
+}
+.btn-light{
+	background-color: #ffffff;
+	color: #222129;
+	padding: 4px 12px;
+    border-radius: 30px;
+    font-family: 'CircularStdBold';
+}
+.btn-success{
+	background-color: #37c878;
+    border-color: #37c878;
+    padding: 6px 12px;
+    border-radius: 30px;
+    font-family: 'CircularStdBold';
+}
+.btn-success:hover{
+	background-color: #008751;
+    border-color: #008751;
+}
+.btn-success:not(:disabled):not(.disabled).active,
+ .btn-success:not(:disabled):not(.disabled):active,
+  .show>.btn-success.dropdown-toggle{
+	background-color: #008751;
+    border-color: #008751;
+}
+.btn-outline-success{
+	border:0px;
+    color: #37c978;
+    padding: 6px 12px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-family: 'CircularStdBold';
+}
+.btn-outline-success:hover{
+	background-color: #008751;
+    border-color: #008751;
+}
+.btn-outline-success:not(:disabled):not(.disabled).active,
+ .btn-outline-success:not(:disabled):not(.disabled):active,
+  .show>.btn-outline-success.dropdown-toggle{
+	background-color: #008751;
+    border-color: #008751;
+}
+.btn-outline-danger{
+    color: #f95d5d;
+    border-color: #f95d5d;
+    padding: 6px 12px;
+    border-radius: 30px;
+}
+
+/*####### select css #####*/
+.com-select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../images/select-arrow.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 20px;
+}
+/*####### select css end #####*/
+.com-title{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.com-title h3{
+	position: relative;
+	color: #222129;
+	font-size: 40px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    font-family: 'CircularStdBold';
+}
+.com-title h3:after{
+	position: absolute;
+	content: "";
+	background-image: url(../images/title-bottom-shape.png);
+	width: 150px;
+    height: 5px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.como-cont-wrap{
+	position: relative;
+	width: 100%;
+}
+.como-cont-wrap p{
+	position: relative;
+	color: #222129;
+	font-size: 16px;
+	margin-bottom: 15px;
+	font-family: 'Work Sans', sans-serif;
+}
+.como-cont-wrap ul{
+	position: relative;
+	display: block;
+	margin-bottom: 15px;
+	padding-left: 15px;
+}
+.como-cont-wrap ul li{
+	position: relative;
+	color: #222129;
+	font-size: 16px;
+	padding: 5px 0;
+	padding-left: 5px;
+}
+.como-cont-wrap ul li:before{
+	content: "\f058";
+	font-family: fontawesome;
+    position: absolute;
+    left: -15px;
+    color: #37c978;
+    font-size: 18px;
+}
+
+/*radio list css start*/
+.radio-box-list{
+    position: relative;
+    width: 100%;
+    margin-bottom: 12px;
+}
+.radio-box-list [type="radio"]:checked,
+.radio-box-list [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.radio-box-list [type="radio"]:checked + label,
+.radio-box-list [type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+.radio-box-list [type="radio"]:checked + label:before,
+.radio-box-list [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #37c978;
+    border-radius: 100%;
+    background: #fff;
+}
+.radio-box-list [type="radio"]:checked + label:after,
+.radio-box-list [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #37c978;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.radio-box-list [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.radio-box-list [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.radio-box-list [type="radio"]:checked + label:before{
+    border-color: #37c978;
+}
+/*####### radio list css end #########*/
+/*#### check box css start ####*/
+  /* The container */
+  .checkbox-list {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    color: #747474;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  /* Hide the browser's default checkbox */
+  .checkbox-list input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    border: 2px solid #37c978;
+  }
+  /* On mouse-over, add a grey background color */
+  .checkbox-list:hover input ~ .checkmark {
+    /*background-color: #ccc;*/
+  }
+  /* When the checkbox is checked, add a blue background */
+  .checkbox-list input:checked ~ .checkmark {
+    background-color: #f7f7f7;
+  }
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  /* Show the checkmark when checked */
+  .checkbox-list input:checked ~ .checkmark:after {
+    display: block;
+  }
+  /* Style the checkmark/indicator */
+  .checkbox-list .checkmark:after {
+    left: 8px;
+    top: -8px;
+    width: 10px;
+    height: 20px;
+    border: solid #37c978;
+    border-width: 0 4px 4px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+/*########### check box css ###########*/
+
+
+/*######### comon class css end #########*/
+
+/*####### animation #########*/
+@keyframes smoothScrollTop {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes smoothScrollBottom {
+  0% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/*###### header css start ######*/
+.header-wraper.h-header{
+	position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    padding: 10px 0;
+    background-color: transparent;
+}
+.header-wraper.sticky{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background-color: #ffffff;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 5px 8px 0 rgba(0, 0, 0, .14), 0 1px 14px 0 rgba(0, 0, 0, .12);
+    animation: smoothScroll 1s forwards;
+}
+.header-wraper{
+    position: relative;
+    width: 100%;
+    z-index: 9;
+    padding: 10px 0;
+    background-color: #ffffff;
+}
+.logo{
+	position: relative;
+	width: 100%;
+}
+.logo img{
+	height: 70px;
+}
+.menu-wraper{
+	position: relative;
+	width: 100%;
+}
+.menu-wraper ul{
+	position: relative;
+	width: 100%;
+	display: block;
+	margin-bottom: 0px;
+	text-align: right;
+}
+.menu-wraper ul li{
+	position: relative;
+	display: inline-block;
+    padding: 0px 10px;
+}
+.menu-wraper ul li a{
+	position: relative;
+	display: block;
+	text-transform: uppercase;
+    font-size: 14px;
+    color: #37c978 !important;
+    cursor: pointer;
+	font-family: 'CircularStdBold';
+}
+.header-wraper.h-header .menu-wraper ul li a{
+	color: #ffffff !important;
+}
+.header-wraper.sticky .menu-wraper ul li a{
+	color: #37c978 !important;
+}
+.login-sign-wraper{
+	position: relative;
+	width: 100%;
+}
+.login-sign-wraper .btn-outline-light{
+    padding: 5px 15px;
+    font-size: 14px;
+}
+.header-wraper.h-header .login-sign-wraper .btn-outline-light{
+	border-color: #fff;
+    color: #fff;
+}
+.header-wraper.h-header .login-sign-wraper .btn-outline-light:hover{
+	color: #000;
+}
+.header-wraper .login-sign-wraper .btn-outline-light,.header-wraper.sticky .login-sign-wraper .btn-outline-light{
+    border-color: #37c978;
+    color: #37c978;
+}
+.login-sign-wraper .btn-light{
+    padding: 5px 15px;
+    font-size: 14px;
+    -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.23);
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.23);
+}
+.header-wraper.h-header .login-sign-wraper .btn-light{
+	background-color: #fff;
+    color: #000;
+}
+.header-wraper .login-sign-wraper .btn-light,.header-wraper.sticky .login-sign-wraper .btn-light{
+    background-color: #37c978;
+    color: #ffffff;
+}
+/*###### main menu ###########*/
+.main-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 990;
+    background: #fff;
+    max-width: 40%;
+    width: 100%;
+    height: 100vh;
+    padding: 3.75rem 4.375rem 3.25rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform .4s ease-in-out;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2), 0 5px 8px 0 rgba(0, 0, 0, .14), 0 1px 14px 0 rgba(0, 0, 0, .12);
+}
+.main-menu.main-menu-open{
+	-webkit-transform: translateX(0%);
+    transform: translateX(0%);
+}
+.menu-close{
+	position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 25px;
+    color: #37c978;
+}
+.main-menu .main-menu-inner{
+	position: relative;
+	width: 100%;
+}
+.main-menu .main-menu-inner ul{
+	position: relative;
+	width: 100%;
+	display: block;
+}
+.main-menu .main-menu-inner ul li{
+    position: relative;
+    display: block;
+    padding: 10px 0px;
+}
+.main-menu .main-menu-inner ul li a {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #37c978;
+    font-family: 'CircularStdBold';
+}
+/*#### close icon css #######*/
+#nav-icon{
+	width: 35px;
+    height: 45px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#nav-icon.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+#nav-icon.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#nav-icon.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+#nav-icon.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+#nav-icon span:nth-child(1) {
+    top: 0px;
+}
+#nav-icon span:nth-child(2), #nav-icon span:nth-child(3) {
+    top: 18px;
+}
+#nav-icon span:nth-child(4) {
+    top: 36px;
+}
+#nav-icon span{
+    position: absolute;
+	height: 5px;
+    width: 100%;
+    background: #37c978;
+    border-radius: 9px;
+    opacity: 1;
+    transition: 0.5s;
+}
+/*#### close icon css end #######*/
+
+
+
+/*########## banner css start #########*/
+.banner-sec{
+	position: relative;
+	width: 100%;
+	background-image: url(../images/banner-bg.jpg);
+	background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: cover;
+    padding: 15% 0;
+}
+.banner-content{
+	position: relative;
+	width: 100%;
+	padding: 0px 15px;
+}
+.banner-content h4{
+	position: relative;
+	font-size: 60px;
+	color: #222129;
+	margin-bottom: 15px;
+	font-family: 'CircularStdBold';
+}
+.banner-content p{
+	position: relative;
+	color: #222129;
+	font-size: 20px;
+	margin-bottom: 15px;
+	text-shadow: 0px 1px 3px #d5f6e5;
+}
+.banner-content .banner-btn-wrap{
+	position: relative;
+	width: 100%;
+}
+.banner-content .banner-btn-wrap .btn-success{
+    padding: 8px 20px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.23);
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.23);
+}
+
+/*######### howworks whoweare css start #########*/
+
+.howworks-whoweare-wraper{
+	position: relative;
+	width: 100%;
+	background-color: #d5f5e3;
+}
+.howworks-whoweare-wraper:before{
+	content: "";
+    background-image: url(../images/left-shape-bg.png);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25%;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom;
+}
+/*####### how it works css start ########*/
+.how-it-works-wraper{
+	position: relative;
+	width: 100%;
+}
+.how-work-inner-wrap{
+	position: relative;
+	width: 100%;
+    text-align: center;
+}
+.how-work-inner-wrap .icon-wrap{
+	position: relative;
+    background-color: #c5f1d8;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.how-work-inner-wrap .icon-wrap .count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    background-color: #37c978;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: normal;
+    font-family: 'CircularStdBold';
+}
+.how-work-inner-wrap h5{
+	position: relative;
+	color: #222129;
+	font-size: 22px;
+	margin-bottom: 15px;
+	font-family: 'CircularStdBold';
+}
+.how-work-inner-wrap p{
+	position: relative;
+	color: #222129;
+	font-size: 16px;
+}
+
+/*animation css*/
+/* right bounce */
+@-webkit-keyframes bounceRight {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+
+  }
+  40% {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+  60% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+}
+@-moz-keyframes bounceRight {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-20px);
+  }
+  60% {
+    transform: translateX(-10px);
+  }
+}
+@keyframes bounceRight {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  40% {
+    -ms-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+  60% {
+    -ms-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+}
+/* /right bounce */
+
+/*.how-work-middle-carcel{
+	position: relative;
+    background-color: #37c978;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.how-work-middle-carcel img{
+	-webkit-animation: bounceRight 2s infinite;
+  	animation: bounceRight 2s infinite;
+  	height: 20px;
+}*/
+
+.how-works-cont-wrap:after{
+	content: "";
+	background-image: url(../images/dots-images.png);
+	width: 50%;
+    height: 2px;
+    position: absolute;
+    left: 74%;
+    top: 20%;
+}
+.how-works-cont-wrap:last-child:after{
+	content: none;
+}
+
+/*####### how it works css end ########*/
+
+/*####### who we are start ########*/
+.who-we-are-wraper{
+	position: relative;
+	width: 100%;
+	padding: 50px 0px;
+}
+.who-we-are-wraper:before{
+	content: "";
+    background-image: url(../images/who-we-are-left-shape.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    left: 5%;
+    top: 0;
+    position: absolute;
+}
+.who-we-are-wraper .como-cont-wrap .com-title{
+    text-align: left;
+}
+.who-we-are-wraper .como-cont-wrap .com-title h3:after{
+	left: 0;
+    transform: translateX(0);
+}
+.who-we-are-wraper .como-cont-wrap .btn-outline-success{
+    padding: 6px 20px;
+}
+/*####### who we are end ########*/
+
+/*####### our partners css start ########*/
+.our-partners-wraper{
+	position: relative;
+	width: 100%;
+	padding: 30px 0px;
+}
+.our-partners-wraper:before{
+	content: "";
+    background-image: url(../images/who-we-are-left-shape.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+    right: 1%;
+    top: 25%;
+    position: absolute;
+}
+.partners-slider-wrap{
+	position: relative;
+	width: 100%;
+	padding: 20px 10px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.16);
+}
+.partners-slider-wrap h5{
+	position: relative;
+	text-align: center;
+	color: #222129;
+	font-size: 18px;
+	margin-bottom: 0px;
+}
+/*arrow css*/
+#PartnersSlider .owl-dots{
+    display: none;
+}
+#PartnersSlider .owl-nav {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+}
+#PartnersSlider .owl-nav .owl-prev {
+    position: absolute;
+    left: -5%;
+}
+#PartnersSlider .owl-nav .owl-next {
+    position: absolute;
+    right: -5%;
+}
+#PartnersSlider .owl-nav button{
+    background: #37c978;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    transition: 0.5s;
+    text-align: center;
+}
+#PartnersSlider .owl-nav button span{
+    font-size: 12px;
+    color: #fff;
+    transition: 0.5s;
+}
+#PartnersSlider .owl-nav button:hover{
+    background: #008751;
+	transition: 0.5s;
+}
+
+/*####### our partners css end ########*/
+
+/*######### howworks whoweare css end #########*/
+
+/*######### whyus latestblogs css start #########*/
+.whyus-latestblogs-wraper{
+	position: relative;
+	width: 100%;
+	background-color: #d5f5e3;
+}
+.whyus-latestblogs-wraper:before{
+	content: "";
+    background-image: url(../images/right-shape-bg.png);
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 46%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom;
+}
+
+/*##### why-us css start ####*/
+.why-us-wraper{
+	position: relative;
+	width: 100%;
+	padding: 40px 0;
+}
+.why-us-wraper:before{
+	content: "";
+    background-image: url(../images/whyus-left-big-shape.png);
+   	background-repeat: no-repeat;
+    background-size: contain;
+    width: 160px;
+    height: 160px;
+    left: 0%;
+    top: 25%;
+    position: absolute;
+}
+
+.why-us-wraper .whyus-inner-wrap{
+	position: relative;
+	width: 100%;
+}
+.whyus-inner-wrap .whyus-accordion-list{
+	position: relative;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.16);
+}
+.whyus-inner-wrap .whyus-accordion-list .whyus-accordion-head{
+	position: relative;
+	width: 100%;
+	background: #fff;
+	padding: 10px 15px;
+}
+.whyus-inner-wrap .whyus-accordion-list .whyus-accordion-head h2{
+	position: relative;
+	color: #37c978;
+	font-size: 18px;
+	margin-bottom: 0px;
+	cursor: pointer;
+}
+.whyus-inner-wrap .whyus-accordion-list .whyus-accordion-head h2 .plusminus {
+    float: right;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 23px;
+}
+.whyus-inner-wrap .whyus-accordion-list .whyus-accordion-body{
+	position: relative;
+	width: 100%;
+	padding: 20px 15px;
+	background: rgba(243,247,252,1);
+	background: -moz-linear-gradient(top, rgba(243,247,252,1) 0%, rgba(252,253,254,1) 51%, rgba(253,253,254,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(243,247,252,1)), color-stop(51%, rgba(252,253,254,1)), color-stop(100%, rgba(253,253,254,1)));
+	background: -webkit-linear-gradient(top, rgba(243,247,252,1) 0%, rgba(252,253,254,1) 51%, rgba(253,253,254,1) 100%);
+	background: -o-linear-gradient(top, rgba(243,247,252,1) 0%, rgba(252,253,254,1) 51%, rgba(253,253,254,1) 100%);
+	background: -ms-linear-gradient(top, rgba(243,247,252,1) 0%, rgba(252,253,254,1) 51%, rgba(253,253,254,1) 100%);
+	background: linear-gradient(to bottom, rgba(243,247,252,1) 0%, rgba(252,253,254,1) 51%, rgba(253,253,254,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f7fc', endColorstr='#fdfdfe', GradientType=0 );
+}
+.whyus-inner-wrap .whyus-accordion-list .whyus-accordion-body p{
+	color: #808080;
+	margin-bottom: 0px;
+	font-size: 18px;
+}
+.whyus-inner-wrap .whyus-view-btn{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin-top: 15px;
+}
+.whyus-inner-wrap .whyus-view-btn .btn-outline-success{
+    padding: 8px 24px;
+    text-transform: uppercase;
+}
+/*##### why-us css end ####*/
+
+/*###### latest blogs ########*/
+.latest-blogs-wraper{
+	position: relative;
+	width: 100%;
+	padding: 30px 0;
+}
+
+.blog-inner-wrap{
+	position: relative;
+	width: 100%;
+	background-color: #ffffff;
+}
+.blog-inner-wrap .blog-img{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.blog-inner-wrap .blog-img img{
+	transition: 0.5s;
+}
+.blog-inner-wrap:hover .blog-img img{
+	transition: 0.5s;
+	transform: scale(1.1);
+}
+.blog-inner-wrap .blog-cont{
+	position: relative;
+	width: 100%;
+	padding: 10px;
+	border-bottom: 1px solid #eaeaea;
+}
+.blog-inner-wrap .blog-cont h4{
+	position: relative;
+	color: #10242b;
+    font-size: 24px;
+    font-weight: 700;
+}
+.blog-inner-wrap .blog-cont p{
+	position: relative;
+	color: #5c666a;
+    font-size: 19px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.blog-inner-wrap .post-details{
+	position: relative;
+	width: 100%;
+	padding: 10px;
+}
+.blog-inner-wrap .post-details p{
+	position: relative;
+	width: 100%;
+	margin-bottom: 0px;
+	color: #10242b;
+	font-size: 14px;
+}
+.blog-inner-wrap .post-details p span{
+	color: #9ca5a9;
+}
+.blog-inner-wrap .post-details .blog-plus-icon{
+	position: absolute;
+    top: -24px;
+    right: 10px;
+    font-size: 30px;
+}
+.blog-inner-wrap .post-details .blog-plus-icon .fa{
+	color: #37c978;
+	transition: 0.5s;
+}
+.blog-inner-wrap .post-details .blog-plus-icon .fa:hover{
+	color: #008751;
+	transition: 0.5s;
+}
+.latest-blogs-wraper .blog-view-btn{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin-top: 40px;
+}
+.latest-blogs-wraper .blog-view-btn .btn-outline-success{
+    padding: 8px 24px;
+    text-transform: uppercase;
+}
+/*######### whyus latestblogs css end #########*/
+
+/*############ footer css start ##########*/
+.footer-wraper{
+	position: relative;
+	width: 100%;
+	background-color: #0b0f12;
+	padding-top: 50px;
+}
+.foot-inner-wrap{
+	position: relative;
+	width: 100%;
+}
+.foot-inner-wrap h4{
+    position: relative;
+    font-size: 18px;
+	color: #ffffff;
+	margin-bottom: 15px;
+}
+.foot-inner-wrap .foot-contact-info{
+	position: relative;
+	width: 100%;
+}
+.foot-inner-wrap .foot-contact-info p{
+	position: relative;
+    width: 100%;
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.foot-inner-wrap .foot-contact-info p span{
+	color: #c5c5c5;
+	margin-right: 5px;
+}
+.foot-inner-wrap .foot-contact-info p a{
+	color: #64676a;
+}
+
+.foot-inner-wrap .foot-menu{
+	position: relative;
+	width: 100%;
+}
+.foot-inner-wrap .foot-menu ul{
+	position: relative;
+	display: block;
+	margin-bottom: 0;
+}
+.foot-inner-wrap .foot-menu ul li{
+	position: relative;
+	display: block;
+	width: 100%;
+    padding: 5px 0px;
+}
+.foot-inner-wrap .foot-menu ul li a{
+    position: relative;
+    color: #64676a;
+    font-size: 16px;
+}
+.foot-inner-wrap p{
+	position: relative;
+    color: #64676a;
+    font-size: 16px;
+}
+.foot-inner-wrap .newsletter-wrap{
+	position: relative;
+	width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+}
+.newsletter-wrap .fa{
+    position: absolute;
+    color: #37c878;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 6px;
+}
+.foot-inner-wrap .newsletter-wrap .form-control{
+    background-color: #252627;
+    border:1px solid #252627;
+    padding-left: 30px;
+    border-radius: 0px;
+    color: #fff;
+}
+.foot-inner-wrap .newsletter-wrap .form-control:focus{
+	outline: none;
+	box-shadow: none;
+	border:1px solid #37c878;
+}
+.foot-inner-wrap .newsletter-wrap .btn-success{
+    position: relative;
+    border-radius: 0px;
+    height: 38px;
+}
+.social-icon{
+	position: relative;
+	width: 100%;
+}
+.social-icon ul{
+	position: relative;
+	display: block;
+	margin-bottom: 0px;
+}
+.social-icon ul li{
+	position: relative;
+	display: inline-block;
+	margin:0px 5px;
+}
+.copy-right{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	padding:15px 0;
+	border-top: 1px solid #22282c;
+}
+.copy-right p{
+	color: #64676a;
+	margin-bottom: 0px;
+}
+.copy-right p a{
+	color: #64676a;
+}
+/*########## footer css end ###########*/
+
+/*########## login sign up css start #############*/
+/*.login-signup-popup .login-signup-wrapper.modal-dialog .modal-content {
+    border-radius: 0;
+}
+.login-signup-wrapper .signup-modal-close {
+    position: relative;
+    z-index: 9;
+}
+.login-signup-wrapper .signup-modal-close .close{
+    position: absolute;
+    right: 0;
+	margin-right: 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+	opacity: 1;
+	cursor: pointer;
+}
+.login-signup-wrapper .signup-body{
+	position: relative;
+	width: 100%;
+}
+.login-signup-wrapper .signup-body .nav-tabs{
+    background: #d5f5e3;
+    padding-top: 35px;
+    border-bottom: 1px solid #b6dbc5;
+}
+.login-signup-wrapper .signup-body .nav-tabs li{
+	width: 50%;
+}
+.login-signup-wrapper .signup-body .nav-tabs li a{
+    position: relative;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 10px 5px;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    color: #37c978;
+    font-size: 18px;
+    font-family: 'CircularStdBold';
+}
+.login-signup-wrapper .signup-body .nav-tabs li a:hover{
+	background: transparent;
+}
+.login-signup-wrapper .signup-body .nav-tabs li a.active{
+	color: #ffffff;
+    background: #008751;
+}
+.login-signup-wrapper .signup-body .tab-content{
+	position: relative;
+	width: 100%;
+	padding:15px 30px;
+}
+
+.signup-body .tab-content .form-group label{
+    position: relative;
+    width: 100%;
+    color: #222129;
+    font-size: 16px;
+    font-family: 'CircularStdBold';
+}
+.signup-body .tab-content .form-group .form-control{
+    border: 1px solid #37c978;
+    border-radius: 0;
+    padding: 3px 10px;
+    height: 40px;
+    color: #000;
+    transition: 0.5s;
+}
+.signup-body .tab-content .form-group .form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #035671;
+    transition: 0.5s;
+}
+.signup-body .tab-content .form-group .field-icon {
+	float: right;
+	margin-top: -32px;
+	position: relative;
+	z-index: 2;
+	font-size: 20px;
+	color: #b1b1b1;
+    right: 8px;
+    cursor: pointer;
+}
+.signup-body .tab-content .invest-borrow-btn{
+	position: relative;
+	width: 100%;
+}
+.signup-body .tab-content .invest-borrow-btn .btn-success{
+	padding: 5px 20px;
+}*/
+/*####### login #######*/
+/*.login-signup-wrapper .login-body{
+	position: relative;
+	width: 100%;
+	padding: 30px;
+}
+.login-body .form-group label{
+    position: relative;
+    width: 100%;
+    color: #222129;
+    font-size: 16px;
+    font-family: 'CircularStdBold';
+}
+.login-body .form-group .form-control{
+    border: 1px solid #37c978;
+    border-radius: 0;
+    padding: 3px 10px;
+    height: 40px;
+    color: #000;
+    transition: 0.5s;
+}
+.login-body .form-group .form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #035671;
+    transition: 0.5s;
+}
+.login-body .form-group .field-icon {
+	float: right;
+	margin-top: -32px;
+	position: relative;
+	z-index: 2;
+	font-size: 20px;
+	color: #b1b1b1;
+    right: 8px;
+    cursor: pointer;
+}
+.login-body .login-submit-btn{
+	position: relative;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.login-body .login-submit-btn .btn-success{
+	padding: 5px 20px;
+}
+.login-body .login-forgot-pass{
+	position: relative;
+	width: 100%;
+}
+.login-body .login-forgot-pass a{
+    color: #222129;
+}
+@media (min-width: 768px){
+	.login-signup-popup .login-signup-wrapper.modal-dialog {
+	    width: 400px;
+	}	
+}*/
+/*########## login sign up css end #############*/
+
+/*###############################*/
+/*###############################*/
+/*## inner banner ###*/
+.inner-banner{
+	position: relative;
+	width: 100%;
+	padding: 50px 0px;
+	background-color: #37c978;
+}
+.inner-banner h3{
+	position: relative;
+    width: 100%;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: 'CircularStdBold';
+    color: #fff;
+    font-size: 28px;
+}
+
+/*######### contact us css start #########*/
+.contact-form-sec{
+	position: relative;
+    width: 100%;
+    padding: 50px 0;
+    background-color: #cdebda;
+}
+.contact-form-sec .title h3{
+	position: relative;
+    width: 100%;
+    color: #26282e;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.contact-form-sec .form-group .form-control{
+	position: relative;
+	width: 100%;
+    font-size: 16px;
+    color: #777;
+    padding: 30px 20px;
+    border-radius: 0;
+    /*height: 60px;*/
+    border: solid 1px rgba(55, 201, 120, 0.14);
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+    transition: 0.5s;
+}
+.contact-form-sec .form-group .form-control:focus{
+	position: relative;
+	border: 1px solid #9ec5b0;
+	transition: 0.5s;
+}
+.contact-form-sec .btn-success{
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+/*######### blog css start #########*/
+.blog-wraper{
+	position: relative;
+	width: 100%;
+	padding: 50px 0;
+    background-color: #cdebda;
+}
+
+/*blog single css*/
+.blog-single-wraper{
+	position: relative;
+	width: 100%;
+	padding: 50px 0;
+    background-color: #cdebda;
+}
+.blog-single-cont h4{
+    position: relative;
+    color: #10242b;
+    font-size: 24px;
+    font-weight: 700;
+}
+.blog-single-cont h6{
+	position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+    color: #10242b;
+    font-size: 18px;
+    font-weight: 500;
+}
+.blog-single-cont h6 span{
+    color: #9ca5a9;
+}
+.blog-single-cont p{
+    position: relative;
+    color: #5c666a;
+    font-size: 19px;
+}
+
+/*###### partners css start ######*/
+.our-partners{
+	position: relative;
+	width: 100%;
+	padding: 50px 0;
+    background-color: #cdebda;
+}
+.our-partners .partners-logo{
+	position: relative;
+    width: 100%;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.16);
+}
+
+
+/*######### about us css start #######*/
+.about-us{
+	position: relative;
+	width: 100%;
+	padding: 50px 0;
+    background-color: #cdebda;
+}
+.our-mission-vision-wraper{
+	position: relative;
+	width: 100%;
+}
+.mission-vision-inner{
+	position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 10px;
+    align-items: center;
+    -webkit-box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.16);
+}
+.mission-vision-inner .icon{
+	position: relative;
+	width: 100px;
+}
+.mission-vision-inner .mission-vision-cont{
+	position: relative;
+	width: calc(100% - 100px)
+}
+.mission-vision-inner .mission-vision-cont h4{
+    position: relative;
+    color: #37c978;
+    font-size: 24px;
+    font-weight: 700;
+}
+.mission-vision-inner .mission-vision-cont p{
+	position: relative;
+    color: #5c666a;
+    font-size: 16px;
+}
+
+/*######## how it works page css start ##########*/
+.how-it-works-page-wraper{
+	position: relative;
+	width: 100%;
+	padding: 40px 0px;
+    background-color: #d5f5e3;
+}
+.how-it-works-sec-list{
+	position: relative;
+	width: 100%;
+	padding: 20px 0;
+}
+.how-it-works-sec-list .icon{
+	position: relative;
+    background-color: #c5f1d8;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.how-it-works-sec-list .icon .count{
+	position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #37c978;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: normal;
+    font-family: 'CircularStdBold';
+}
+.how-it-works-sec-list .how-work-inner-wrap{
+	text-align: left;
+}
+.how-it-works-sec-list .how-work-inner-wrap h5{
+	text-align: center;
+}
+/*######## how it works page css end ##########*/
+
+/*######### registration css start #########*/
+.registration-wraper{
+    position: relative;
+    width: 100%;
+    padding: 50px 0px;
+    background-color: #f6f6f6;
+}
+.registration-inner-wrap{
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.registration-inner-wrap .signup-login-header{
+    position: relative;
+    width: 100%;
+    padding: 15px 0px;
+    text-align: center;
+    border-bottom: 1px solid #cacaca;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.registration-inner-wrap .signup-login-header h1{
+    position: relative;
+    color: #000000;
+    font-size: 29px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.registration-inner-wrap .registration-tab{
+    position: relative;
+    width: 100%;
+    padding: 0px 15px;
+    border-bottom: 0px;
+    margin-bottom: 15px;
+}
+.registration-inner-wrap .registration-tab .nav-item{
+    position: relative;
+    width: 33.33%;
+}
+.registration-inner-wrap .registration-tab .nav-item .nav-link{
+    position: relative;
+    border: 0px;
+    padding: 10px 0px;
+    border-bottom: 3px solid #cdcdcd;
+    color: #747474;
+    font-size: 22px;
+    font-weight: 500;
+}
+.registration-inner-wrap .registration-tab .nav-item .nav-link.active{
+    color: #37c978;
+    border-bottom-color: #37c978;
+}
+.registration-inner-wrap .registration-tab .nav-item .nav-link .icon{
+    position: relative;
+}
+.registration-inner-wrap .registration-tab .nav-item .nav-link .icon .check-icon{
+    display: none;
+}
+.registration-inner-wrap .registration-tab .nav-item .nav-link.active .icon .check-icon{
+    display: inline-block;
+}
+.registration-inner-wrap .registration-tab .nav-item .nav-link.active .icon .check-box-icon{
+    display: none;
+}
+
+.reg-form-cont .form-group label{
+    position: relative;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 700;
+    margin-bottom: 1px;
+}
+.reg-form-cont .form-group .form-control{
+    position: relative;
+    height: auto;
+    padding: 8px 8px;
+    padding-left: 0;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #999999;
+}
+.reg-form-cont .form-group .form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border-bottom-color: #37c978;
+}
+.reg-form-cont .form-group .employed-chose{
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #999999;
+}
+.reg-form-cont .form-group .employed-chose .radio-box-list{
+    position: relative;
+    width: auto;
+    margin-right: 15px;
+    margin-bottom: 0;
+}
+.reg-form-cont .form-group .employed-chose .radio-box-list label{
+    color: #555555;
+}
+
+.reg-form-cont .form-group .business-chose{
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #999999;
+}
+.reg-form-cont .form-group .business-chose .radio-box-list{
+    position: relative;
+    width: auto;
+    margin-right: 15px;
+    margin-bottom: 0;
+}
+.reg-form-cont .form-group .business-chose .radio-box-list label{
+    color: #555555;
+}
+.reg-form-cont .terms-conditions{
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin:25px 0px;
+}
+.reg-form-cont .terms-conditions .checkbox-list{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.reg-form-cont .reg-btn-wrap{
+    position: relative;
+    width: 100%;
+    margin:25px 0px;
+    text-align: center;
+}
+.reg-form-cont .reg-btn-wrap .btn-outline-danger{
+    padding: 8px 30px;
+    margin-right: 10px;
+}
+.reg-form-cont .reg-btn-wrap .btn-success{
+    padding: 8px 30px;
+    margin-left: 10px;
+}
+
+/*######### login css start #######*/
+.login-wraper{
+    position: relative;
+    width: 100%;
+    padding: 50px 0px;
+    background-color: #f6f6f6;
+}
+.login-body{
+    position: relative;
+    width: 100%;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.login-body .form-group label{
+    position: relative;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 700;
+    margin-bottom: 1px;
+}
+.login-body .form-group .form-control{
+    position: relative;
+    height: auto;
+    padding: 8px 8px;
+    padding-left: 0;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #999999;
+}
+.login-body .form-group .form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border-bottom-color: #37c978;
+}
+.login-body .form-group .field-icon{
+    float: right;
+    margin-top: -32px;
+    position: relative;
+    z-index: 2;
+    font-size: 20px;
+    color: #b1b1b1;
+    right: 8px;
+    cursor: pointer;
+}
+.login-body .login-submit-btn{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.login-body .login-submit-btn .btn-success{
+    padding: 6px 30px;
+}
+.login-body .login-forgot-pass{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.login-body .login-forgot-pass a{
+    color: #000;
+}

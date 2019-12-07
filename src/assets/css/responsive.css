@@ -1,0 +1,66 @@
+@media(min-width: 992px) and (max-width: 1199px){
+	.login-sign-wraper .btn-outline-light,.login-sign-wraper .btn-light{
+		padding: 3px 5px;
+	}
+}
+
+/*max width 991px*/
+@media(max-width: 991px){
+	/*header css*/
+	.login-sign-wraper{
+		text-align: right;
+	}
+	.logo img{
+	    object-fit: contain;
+	}
+	
+}
+
+/*width 768px to 991px*/
+@media(min-width: 768px) and (max-width: 991px){
+
+}
+
+/*max width 767px*/
+@media(max-width: 767px){
+	/*header css*/
+	.main-menu{
+		max-width: 100%;
+		width: 100%;
+	}
+	/*banner css*/
+	.banner-sec{
+	    padding: 40% 0 30% 0;
+	}
+	.banner-content h4{
+		font-size: 25px;
+	}
+	.banner-content p{
+		display: none;
+	}
+
+
+	.how-works-cont-wrap:after{
+		display: none;
+	}
+	/*########## Registration css start #########*/
+	.registration-inner-wrap .registration-tab .nav-item{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+}
+
+/*width 576px to 767px*/
+@media(min-width: 576px) and (max-width: 767px){
+	.banner-sec {
+	    padding: 25% 0 20% 0;
+	}
+	.banner-content h4 {
+	    font-size: 40px;
+	}
+}
+
+/*max with 575px*/
+@media(max-width: 575px){
+
+}
